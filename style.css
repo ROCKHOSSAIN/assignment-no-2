@@ -223,7 +223,8 @@ margin-bottom: 48px;
     gap: 24px;
 }
 .card img{
-    width: 100%;
+    /* width: 100%; */
+
 }
 .card-description{
     color: #534C64;
