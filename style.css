@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Handlee&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500;600;700&family=Roboto+Slab&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Handlee&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500;600;700&family=Roboto+Slab&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -239,6 +239,95 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
 }
 
+/* <!-- free-games  --> */
+.free-games{
+    display: flex;
+    max-width: 1400px;
+    margin: 50px auto 0;
+    align-items: center;
+    gap: 120px;
+    
+}
+
+
+.free-game-content{
+width: 50%;
+margin-bottom: 350px;
+}
+.free-game-content h4{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 24px;
+}
+.free-game-content p{
+    text-align: center;
+    color: #534C64;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px; 
+width: 354px;
+margin: 0 auto;
+}
+
+
+.free-game-image{
+    width: 50%;
+}
+.free-game-image .horse-man{
+    width: 100%;
+}
+
+.free-game-image .cute-game{
+    position:relative;
+    left: -150px;
+    top: -300px;
+    
+}
+
+.play{
+    color: #F948B2;
+}
+
+/* <!-- Different-types-of-games-section  --> */
+.types-of-games{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+    min-height: 200px;
+    margin: 20px auto 0;
+    align-items: center;
+    gap: 27px;
+    flex-wrap: wrap;
+    
+
+    
+}
+.games-name{
+    display: flex;
+    align-items: center;
+    padding: 18px 20px;
+    border-radius: 50px;
+    background: #FFF;
+}
+.games-name:hover{
+    border: 1px solid #F948B2;
+
+}
+.games-name p:hover{
+    color: #F948B2;
+}
+.games-name p{
+color: #0B0223;
+font-size: 20px;
+font-weight: 600;
+}
+
+
+
+
 
 
 
@@ -247,6 +336,8 @@ background-clip: text;
 
 
 @media screen and (max-width:576px){
+    /* .types-of-games, */
+.free-games,
 .cards,   
 .header-section,
 .navbar,
@@ -257,6 +348,8 @@ background-clip: text;
 .banner-section{
     flex-direction: column-reverse;
 }
+
+.free-game-content,
 .card img,
 .game-content,
 .game-img,
@@ -267,6 +360,9 @@ background-clip: text;
 .header-icons{
     width: 100%;
 }
+ /* .types-of-games{
+    width: 50%;
+ } */
 .game-content,
 .game-img,
 .banner-content,
@@ -275,6 +371,20 @@ background-clip: text;
 }
 .cards{
 gap: 50px;
+}
+.free-game-image .cute-game{
+    margin-top: 160px;
+    margin-left: 80px;
+height: 200px;
+width: 250px;
+}
+.free-game-content{
+    /* width: 50%; */
+    margin-bottom: 10px;
+    }
+.types-of-games{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
 }
