@@ -12,13 +12,16 @@ font-family: 'Roboto Slab', serif;
 font-family: 'Work Sans', sans-serif;
 }
 .header-section{
+    max-width: 1440px;
+    min-width: 50px;
+    margin: 50px auto 0;
     display: flex;
     padding: 20px;
 }
 .header-icons{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 20px;
     width: 50%;
 
@@ -27,7 +30,7 @@ font-family: 'Work Sans', sans-serif;
 .navbar{
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     gap: 20px;
     align-items: center;
 }
@@ -301,6 +304,7 @@ margin: 0 auto;
     max-width: 1400px;
     min-height: 200px;
     margin: 20px auto 0;
+    padding-bottom: 30px;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
@@ -387,6 +391,11 @@ margin-bottom: 66px;
     font-size: 50px;
 
 }
+.footer-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -420,6 +429,10 @@ margin-bottom: 66px;
 .navbar,
 .header-icons{
     width: 100%;
+}
+.header-icons{
+    align-items: center;
+    justify-content: center;
 }
 
 .game-content,
