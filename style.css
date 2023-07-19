@@ -50,7 +50,7 @@ color: red;
 font-size: 18px;
 margin: 0px 5px;
 }
-.icon2{
+.icon3{
 color: black;
 font-size: 18px;
 
@@ -315,6 +315,7 @@ margin: 0 auto;
     border-radius: 50px;
     background: #FFF;
     margin: 0 auto;
+    
   
 }
 .games-name:hover{
@@ -332,6 +333,60 @@ font-weight: 600;
 .games-name img{
     margin-right: 10px;
 }
+/* footer-section start  */
+
+.footer-section{
+    background: #0B0223;
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding: 60px 50px;
+}
+.header-icons{
+    margin: 0 auto;
+}
+.footer-title{
+    color: white;
+}
+.footer-topics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+font-size: 18px;
+font-weight: 600;
+margin-top: 66px;
+margin-bottom: 66px;
+}
+.social-icons-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 74px;
+}
+.all-types-conditions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 18px;
+
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+.icon2{
+    color: white;
+    font-size: 50px;
+
+}
 
 
 
@@ -344,7 +399,6 @@ font-weight: 600;
 
 
 @media screen and (max-width:576px){
-    /* .types-of-games, */
 .free-games,
 .cards,   
 .header-section,
@@ -356,7 +410,6 @@ font-weight: 600;
 .banner-section{
     flex-direction: column-reverse;
 }
-
 .free-game-content,
 .card img,
 .game-content,
@@ -368,9 +421,7 @@ font-weight: 600;
 .header-icons{
     width: 100%;
 }
- .types-of-games{
 
- }
 .game-content,
 .game-img,
 .banner-content,
@@ -410,6 +461,20 @@ width: 120px;
 .games-name img{
     width: 50px;
 
+}
+.footer-topics,
+.social-icons-links{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.all-types-conditions{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 100px;
+}
+.copyright{
+    width: 258px;
+    margin: 0 auto;
 }
 
 }
