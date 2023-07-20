@@ -458,14 +458,10 @@ width: 120px;
      display: grid; 
      grid-template-columns: repeat(3,1fr);
      gap: 0px;
-     /* padding: 0px; */
-     /* border: 1px solid black; */
 
 }
 .games-name{
          padding: 5px;
-
-
 }
 
 .games-name p{
@@ -488,6 +484,9 @@ width: 120px;
 .copyright{
     width: 258px;
     margin: 0 auto;
+}
+.free-game-image{
+    height: 300px;
 }
 
 }
