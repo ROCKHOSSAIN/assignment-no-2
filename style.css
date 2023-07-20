@@ -1,4 +1,4 @@
-
+/* google font  */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Handlee&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500;600;700&family=Roboto+Slab&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 *{
     margin: 0;
@@ -229,10 +229,7 @@ margin-bottom: 48px;
     display: flex;
     gap: 24px;
 }
-.card img{
-    /* width: 100%; */
 
-}
 .card-description{
     color: #534C64;
 font-size: 20px;
@@ -295,6 +292,74 @@ margin: 0 auto;
 
 .play{
     color: #F948B2;
+}
+/* <!-- best-ever-game collection  -->  */
+
+.best-game-collection{
+    max-width: 1440px;
+min-width: 50px;
+margin: 50px auto 0;
+display: flex;
+padding: 20px;
+align-items: center;
+background-color: black;
+
+}
+.best-game-content{
+    width: 50%;
+
+}
+.game-cards{           
+     width: 50%;
+    display: flex;
+    gap: 20px;
+
+}
+.game-card{
+    text-align: center;
+}
+.game-card img{
+    width: 100%;
+}
+.star{
+    color:#fbaa33;
+}
+.best-game-content h5{
+font-size: 1.2rem;
+font-family: br;
+color: #e50914;
+text-transform: uppercase;
+letter-spacing: 6px;
+}
+.best-game-content p{
+color: rgba(255, 255, 255, 0.60);
+font-size: 16px;
+font-weight: 500;
+margin-bottom: 18px;
+width: 60%;
+line-height: 1.3rem;
+}
+.best-game-content h1{
+font-size: 2.5rem;
+font-family: bb;
+color: white;
+text-transform: uppercase;
+}
+.game-btn{
+padding: 15px 20px;
+color: white;
+font-size: 18px;
+font-family: bb;
+background: #e50914;
+border-radius: 50px;
+border: none;
+}
+.game-btn:hover{
+    background: #b32e35;
+
+}
+.best-game-title{
+    color: white;
 }
 
 /* <!-- Different-types-of-games-section  --> */
@@ -400,12 +465,7 @@ margin-bottom: 66px;
 
 
 
-
-
-
-
-
-
+/* responsive for mobile  */
 
 @media screen and (max-width:576px){
 .free-games,
@@ -487,6 +547,37 @@ width: 120px;
 }
 .free-game-image{
     height: 300px;
+}
+
+/* new bonus section queries  */
+
+    .game-cards,
+    .best-game-collection{
+        flex-direction: column;
+    }
+    
+    .best-game-content p,
+    .game-cards,
+    .best-game-content
+    {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.game-btn,
+.best-game-content h1{
+    margin: 20px 0px;
+}
+.best-game-title{
+    margin: 10px 0px;
+
+}
+.game-card{
+    margin-bottom: 10px;
+}
+
 }
 
 }
