@@ -305,6 +305,10 @@ align-items: center;
 background-color: black;
 
 }
+.best-game-title{
+    margin: 10px 0px;
+
+}
 .best-game-content{
     width: 50%;
 
@@ -323,6 +327,7 @@ background-color: black;
 }
 .star{
     color:#fbaa33;
+    margin-bottom: 10px;
 }
 .best-game-content h5{
 font-size: 1.2rem;
@@ -361,6 +366,11 @@ border: none;
 .best-game-title{
     color: white;
 }
+.game-card:hover{
+    background-color: rgba(190, 59, 59, 0.747);
+    box-shadow: 8px 5px 25px gray;
+    border-radius: 5px;
+}
 
 /* <!-- Different-types-of-games-section  --> */
 .types-of-games{
@@ -368,7 +378,7 @@ border: none;
     justify-content: center;
     max-width: 1400px;
     min-height: 200px;
-    margin: 20px auto 0;
+    margin: 40px auto 0;
     padding-bottom: 30px;
     align-items: center;
     flex-wrap: wrap;
@@ -580,4 +590,3 @@ width: 120px;
 
 }
 
-}
