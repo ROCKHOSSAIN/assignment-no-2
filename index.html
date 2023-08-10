@@ -8,9 +8,37 @@
     <link rel="shortcut icon" href="images/Frame.png" type="x-icon">
     <!-- font-awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- js code  -->
+
+    <script>
+        const homeSection = document.getElementById("Home");
+        const aboutSection = document.getElementById("About");
+        const servicesSection = document.getElementById("Developers");
+        
+        const recognition = new SpeechRecognition();
+        recognition.continuous = false;
+        
+        recognition.onresult = function(event) {
+          const transcript = event.results[0][0].transcript.toLowerCase();
+        
+          if (transcript.includes("home")) {
+            homeSection.scrollIntoView({ behavior: "smooth" });
+          } else if (transcript.includes("about")) {
+            aboutSection.scrollIntoView({ behavior: "smooth" });
+          } else if (transcript.includes("developers")) {
+            servicesSection.scrollIntoView({ behavior: "smooth" });
+          }
+        };
+        
+        document.getElementById("startListeningButton").addEventListener("click", function() {
+          recognition.start();
+        });
+      </script>
+      
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav>
             <div class="header-section">
                 <div class="header-icons">
@@ -18,20 +46,23 @@
                 <h1 class="header-title "><span class="game-g">G</span>amer</h1>
                 </div>
                     <div class="navbar">
-                        <a href="">About Us</a>
-                        <a href="">Developers</a>
+                        <a href="#Home">Home</a>
+                        <a href="#About">About Us</a>
+                        <a href="#developer">Developers</a>
                         <div class="follow-icons">
                             <a href="">Follow US ON 
                                 <span class="icon1"><i class="fa-brands fa-youtube"></i></span> 
                                 <span class="icon3"><i class="fa-brands fa-tiktok"></i></span> 
                                 </a>
                         </div> 
+            
+                        <button id="startListeningButton">Start Listening</button>
                     </div>
              </div>
         </nav>
     </header>
     <main>
-        <section class="banner-section">
+        <section   class="banner-section">
             <div class="banner-content">
                 <h1 class="banner-header">Play Like The</h1>
                 <h1 class="banner-header-2">G.O.A.T</h1>
@@ -54,7 +85,7 @@
 
         <!-- gamer-section  -->
 
-        <section class="gamer-section">
+        <section id="About" class="gamer-section">
            
             <div class="game-img">
                 <img src="images/pngwing 4.png" alt="">
@@ -113,7 +144,7 @@
         </section>
 
         <!-- best-ever-game collection  -->
-        <section class="best-game-collection">
+        <section id="Developers" class="best-game-collection">
             <div class="best-game-content">
                 <h5>TODAY'S</h5>
                 <h1>GAMES COLLECTION</h1>
